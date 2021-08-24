@@ -1,0 +1,31 @@
+.navbar{
+    display: flex;
+    font-family: 'Dancing Script', cursive;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #DDA15E;
+    color: #FEFAE0;
+
+    a{
+        text-decoration: none;
+        color: #FEFAE0;
+    }
+    .search{
+        justify-content: center;
+        display: flex;
+        align-items: center;
+
+        input{
+            border-radius: 8px;
+            margin-right: 5px;
+            background-color: #FEFAE0;
+            border: 1.5px solid #606C38;
+        }
+
+        .search-logo{
+            font-size: 1.2rem;
+        }
+    }
+
+}

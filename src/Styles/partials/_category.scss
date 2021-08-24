@@ -1,0 +1,15 @@
+.category-container{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    h3{
+        width: 100%;
+        text-align: center;
+        font-size: 2.4rem;
+        color: #BC6C25;
+    }
+    .preview-cat-meal{
+        width: 30%;
+    }
+}

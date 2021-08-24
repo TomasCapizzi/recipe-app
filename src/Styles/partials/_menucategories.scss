@@ -1,0 +1,24 @@
+.menu-cat{
+    display: flex;
+    width: 70%;
+    justify-content: space-around;
+
+    button{
+        margin-top: 20px;
+        cursor: pointer;
+        border: 2px solid #606C38;
+        border-radius: 10px;
+        padding: 5px 8px;
+        font-size: 1rem;
+        font-family: 'Nunito', sans-serif;
+        background-color: transparent;
+        color: #BC6C25;
+        box-shadow: 1px 3px 4px rgba(221,161,94,0.5);
+    }
+    button:hover{
+        background-color: #606C38;
+        color: #FEFAE0;
+        box-shadow: 0 3px 4px rgba(96,108,56,0.5);
+        padding: 4px 7px;
+    }
+}

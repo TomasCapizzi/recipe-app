@@ -1,0 +1,77 @@
+.meal-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    h1{
+        color: #BC6C25;
+        font-size: 2.3rem;
+        margin-bottom: 35px;
+    }
+    button{
+        background-color: transparent;
+        position: absolute;
+        right:20px;
+        top: 100px;
+        font-size: 2rem;
+        cursor: pointer;
+        border: none;
+        color: #BC6C25;
+    }
+}
+.meal-detail{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    align-items: flex-start;
+
+    img{
+        border-radius: 15px;
+        width: 750px;
+        height: 650px;
+        box-shadow: 0 4px 11px rgba(0,0,0,0.4);
+    }
+}
+
+.meal-ingredients{
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    color: #FEFAE0;
+    text-align: center;
+    background-color: #DDA15E;
+    width: 700px;
+    border-radius: 12px;
+    box-shadow: 0 4px 11px rgba(0,0,0,0.4);
+    h2{
+        width: 100%;
+        font-size: 2.2rem;
+        color: #606C38;
+    }
+    h3{
+        font-size: 1.8rem;
+        font-weight: 900;
+        text-decoration: underline;
+        color: #606C38;
+    }
+    div{
+        width: 50%;
+    }
+    p{
+        font-size: 1.45rem;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 700;
+    }
+}
+
+.instructions{
+    width: 60%;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    color: #606C38;
+    font-family: 'Nunito', sans-serif;
+    margin-bottom: 100px;
+    text-align: justify;
+}

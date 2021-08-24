@@ -1,0 +1,31 @@
+.preview-meal{
+    display: flex;
+    width: 35%;
+
+    img{
+        position: relative;
+        width: 100%;
+        border-radius: 10px;
+        box-shadow: 0 5px 11px rgba(0,0,0,0.4);
+        cursor: pointer;
+        margin-bottom: 70px;
+    }
+    img:hover{
+        box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+        opacity: 0.9;
+    }
+    h3{
+        position: absolute;
+        background-color: #606C38;
+        color: #FEFAE0;
+        font-size: 2rem;
+        padding: 8px 15px;
+        z-index: 1;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        width: auto;
+        max-width: 400px;
+        text-align: center;
+    }
+
+}
