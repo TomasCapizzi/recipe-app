@@ -19,7 +19,7 @@ export default function MenuCategories(){
     return (
         <div className='menu-cat'>
             {
-                categories ? categories.map((item) => <Link key={item.idMeal} to={'/category/' + item.strCategory}><button>{item.strCategory}</button></Link>) : <></>
+                categories ? categories.map((item, pos) => <Link key={pos} to={'/category/' + item.strCategory}><button>{item.strCategory}</button></Link>) : <></>
             }
         </div>
     )

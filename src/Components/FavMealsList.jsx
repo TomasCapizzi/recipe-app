@@ -15,7 +15,7 @@ export default function FavMealsList(){
     return (
         <div className='fav-list'>
             {favMeals ? favMeals.map(
-                item => <Link  key={item.idMeal} to={'/meal/' + item.idMeal}>
+                (item, pos) => <Link  key={pos} to={'/meal/' + item.idMeal}>
                 <img src={item.strMealThumb} alt="meal"/>
                 </Link>
             ) : <></>

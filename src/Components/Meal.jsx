@@ -68,13 +68,13 @@ export default function Meal({url}){
             <div>
             <h3>Ingredient</h3>
             {ingredients.map(
-                ing => <p>{ing}</p>
+                (ing, pos) => <p key={pos}>{ing}</p>
             )}
             </div>
             <div>
             <h3>Measures</h3>
             {measures.map(
-                measure => <p>{measure}</p>
+                (measure, pos) => <p key={pos}>{measure}</p>
             )}            
             </div>
         </div> : <></>}
