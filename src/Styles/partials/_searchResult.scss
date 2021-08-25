@@ -1,0 +1,42 @@
+.search-result{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    position: absolute;
+    background-color: #606C38;
+    border-bottom-left-radius: 15px;
+    color: #FEFAE0;
+    top: 0;
+    right: 0;
+    height: auto;
+    width: 350px;
+    font-family: 'Nunito', sans-serif;
+    button{
+        width: 25%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-color: transparent;
+        border: none;
+        font-size: 1.8rem;
+        color: #FEFAE0;
+        cursor: pointer;
+    }
+    button:hover{
+        background-color: #7e8d4d80;
+    }
+    a{
+        text-decoration: none;
+        color: #FEFAE0;
+    }
+    a:hover{
+        color: #DDA15E;
+    }
+    h1{
+        font-size: 1.5rem;
+        letter-spacing: 1.2px;
+        padding: 8px;
+        margin-top: 35px;
+        width: auto;
+    }
+}

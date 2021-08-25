@@ -1,4 +1,4 @@
-import React,{useState, useEffect} from 'react'
+import React,{useState, useEffect} from 'react';
 import { Link } from 'react-router-dom';
 
 export default function MenuCategories(){
@@ -9,7 +9,6 @@ export default function MenuCategories(){
     async function getCategories(){
         const respuesta = await fetch(url + '/categories.php');
         const res = await respuesta.json();
-        console.log(res.categories)
         setCategories(res.categories);
         }
 
@@ -20,7 +19,7 @@ export default function MenuCategories(){
     return (
         <div className='menu-cat'>
             {
-                categories ? categories.map((item) => <Link to={'/category/' + item.strCategory}><button>{item.strCategory}</button></Link>) : <></>
+                categories ? categories.map((item) => <Link key={item.idMeal} to={'/category/' + item.strCategory}><button>{item.strCategory}</button></Link>) : <></>
             }
         </div>
     )

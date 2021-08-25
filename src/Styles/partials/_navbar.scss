@@ -12,9 +12,13 @@
         color: #FEFAE0;
     }
     .search{
-        justify-content: center;
-        display: flex;
-        align-items: center;
+
+        form{
+            justify-content: center;
+            display: flex;
+            align-items: center;
+        }
+        
 
         input{
             border-radius: 8px;

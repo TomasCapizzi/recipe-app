@@ -1,11 +1,9 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
 import {AiOutlineReload} from 'react-icons/ai';
 import Preview from './Preview';
 
 
 export default function RandomMeal({random, randomMeal}){
-    console.log(random)
 
     return (
         <>

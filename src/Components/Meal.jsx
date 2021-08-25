@@ -38,28 +38,20 @@ export default function Meal({url}){
         }        
     }
 
-
-
     function favouriteMeal(){
-        console.log(fav)
       //  setFav(isFav(meal))
         if(fav){
             setFav(false);
             removeFav(meal.idMeal)
-            console.log('remover')
         } else if(!fav){
             setFav(true);
-            console.log(meal);
             addFav(meal);
         }
     }
 
-
       useEffect(()=>{
           getMeal(id);      
       },[]);
-
-
 
     return (
         <div className='meal-container'>

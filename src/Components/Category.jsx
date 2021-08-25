@@ -24,7 +24,7 @@ export default function Categories(){
         <div className='category-container'>
             <h3>{cat}</h3>
             {
-                meals ? meals.map(meal=> <PreviewCat meal={meal}/>) : <><Spinner/></>
+                meals ? meals.map(meal=> <PreviewCat meal={meal} key={meal.idMeal}/>) : <><Spinner/></>
               // meals ? meals.map(meal=> console.log(meal)) : <></>
             }
         </div>
