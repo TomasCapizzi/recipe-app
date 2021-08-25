@@ -18,6 +18,7 @@ export default function Categories(){
     useEffect(()=>{
         setMeals()
         getCategoryMeals()
+         // eslint-disable-next-line react-hooks/exhaustive-deps
     },[cat])
 
     return (

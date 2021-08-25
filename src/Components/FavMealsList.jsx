@@ -8,14 +8,15 @@ export default function FavMealsList(){
 
     useEffect(()=>{
         getFavs();
+         // eslint-disable-next-line react-hooks/exhaustive-deps
     },[])
 
 
     return (
         <div className='fav-list'>
             {favMeals ? favMeals.map(
-                item => <Link to={'/meal/' + item.idMeal}  key={item.idMeal}>
-                <img src={item.strMealThumb} alt="meal image" />
+                item => <Link  key={item.idMeal} to={'/meal/' + item.idMeal}>
+                <img src={item.strMealThumb} alt="meal"/>
                 </Link>
             ) : <></>
             }

@@ -50,7 +50,8 @@ export default function Meal({url}){
     }
 
       useEffect(()=>{
-          getMeal(id);      
+          getMeal(id); 
+           // eslint-disable-next-line react-hooks/exhaustive-deps     
       },[]);
 
     return (
