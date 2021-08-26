@@ -8,8 +8,8 @@ export default function Footer(){
     return (
         <div className='footer'>
             <h3>App realizada por Tomás Capizzi</h3>
-            <Link to='https://github.com/TomasCapizzi' target='_blank'><AiFillGithub/></Link>
-            <Link to='https://www.linkedin.com/in/tomas-capizzi/' target='_blank'><AiFillLinkedin/></Link>
+            <a href='https://github.com/TomasCapizzi' target='_blank'><AiFillGithub/></a>
+            <a href='https://www.linkedin.com/in/tomas-capizzi/' target='_blank'><AiFillLinkedin/></a>
         </div>
     )
 }
