@@ -22,3 +22,68 @@
         padding: 4px 7px;
     }
 }
+
+@media only screen and (max-width: 600px) {
+    .menu-cat{
+        width: 90%;
+        flex-wrap: wrap;
+
+        button{
+            margin-top: 10px;
+            cursor: pointer;
+            border: 1.4px solid #606C38;
+            border-radius: 7px;
+            padding: 4px 7px;
+            font-size: 0.80rem;
+        }
+        button:hover{
+            background-color: #606C38;
+            color: #FEFAE0;
+            box-shadow: 0 3px 4px rgba(96,108,56,0.5);
+            padding: 4px 7px;
+        }
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width:800px) {
+    .menu-cat{
+        width: 95%;
+        flex-wrap: wrap;
+
+        button{
+            margin-top: 15px;
+            border: 1.7px solid #606C38;
+            border-radius: 8px;
+            font-size: 1rem;
+        }
+    }
+}
+@media only screen and (min-width: 800px) and (max-width:1024px) {
+    .menu-cat{
+        width: 80%;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        button{
+            margin-top: 15px;
+            border: 1.7px solid #606C38;
+            border-radius: 8px;
+            font-size: 1rem;
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width:1400px) {
+    .menu-cat{
+        width: 80%;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        button{
+            margin-top: 15px;
+            border: 1.7px solid #606C38;
+            border-radius: 8px;
+            font-size: 1rem;
+        }
+    }
+}

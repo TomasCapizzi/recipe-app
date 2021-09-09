@@ -1,13 +1,3 @@
-/*
-Colores:
-
-Verde 1: #606C38
-Verde 2: #283618
-Crema: #FEFAE0
-Naranja: #DDA15E
-Marron: #BC6C25
-*/
-
 .random-container{
     display: flex;
     flex-direction: column;
@@ -32,3 +22,22 @@ Marron: #BC6C25
         color: #283618;
     }
 }
+
+@media only screen and (max-width: 600px) {
+    .random-container{
+        h2{
+            font-size: 2.2rem;
+            color: #606C38;
+        }
+    }
+    
+    .app-header{
+        display: flex;
+        align-items: center;
+        button{
+            font-size: 1.2rem;
+        }
+    }
+
+}
+

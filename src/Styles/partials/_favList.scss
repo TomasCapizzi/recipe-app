@@ -14,3 +14,39 @@
         opacity: 0.7;
     }
 }
+
+@media only screen and (max-width: 600px) {
+    .fav-list{
+        margin: 15px;
+        width: 90%;
+        img{
+            width: 80px;
+            border-radius: 50%;
+            margin: 5px;
+        }
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 800px) {
+    .fav-list{
+        margin: 15px;
+        width: 100%;
+        img{
+            width: 90px;
+            border-radius: 50%;
+            margin: 5px;
+        }
+    }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1024px) {
+    .fav-list{
+        margin: 15px;
+        width: 100%;
+        img{
+            width: 105px;
+            border-radius: 50%;
+            margin: 5px;
+        }
+    }
+}

@@ -13,3 +13,34 @@
         width: 30%;
     }
 }
+
+
+@media only screen and (max-width: 600px) {
+
+    .category-container{
+
+        .preview-cat-meal{
+            width: 70%;
+        }
+    }
+}
+
+
+@media only screen and (min-width: 600px)and (max-width: 800px) {
+
+    .category-container{
+
+        .preview-cat-meal{
+            width: 45%;
+        }
+    }
+}
+@media only screen and (min-width: 800px)and (max-width: 1024px) {
+
+    .category-container{
+
+        .preview-cat-meal{
+            width: 30%;
+        }
+    }
+}
