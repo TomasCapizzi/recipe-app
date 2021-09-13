@@ -4,7 +4,7 @@
     border-bottom: 1px solid #DDA15E;
     overflow: hidden;
     img{
-        width: 150px;
+        width: 130px;
         border-radius: 50%;
         margin: 5px;
     }
@@ -40,6 +40,18 @@
 }
 
 @media only screen and (min-width: 800px) and (max-width: 1024px) {
+    .fav-list{
+        margin: 15px;
+        width: 100%;
+        img{
+            width: 105px;
+            border-radius: 50%;
+            margin: 5px;
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1400px) {
     .fav-list{
         margin: 15px;
         width: 100%;

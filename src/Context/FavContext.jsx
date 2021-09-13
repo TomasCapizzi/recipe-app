@@ -22,9 +22,10 @@ export function FavContextProvider({children}){
         localStorage.setItem('Fav Meal', JSON.stringify(favMeals.filter(item => item.idMeal !== id)))
         
     }
-    const isFav =(meal)=>{
+    const isFav =(meal, id)=>{
         let coincidence = favMeals.filter(item => item.idMeal === meal.idMeal);
-        if(coincidence.length){
+        let coincidence2 = favMeals.filter(item => item.idMeal === id);
+        if(coincidence.length || coincidence2.length){
             return true;
         } else{
             return false;

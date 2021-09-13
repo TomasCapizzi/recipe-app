@@ -12,7 +12,7 @@ export default function SearchResult({result, setHandlerSearch}){
         <button onClick={cancelSearch}><BiRightArrow/></button>
         <div>
             {
-                result.map(item => <Link to={'/meal/' + item.idMeal}><h1>{item.strMeal}</h1></Link>)
+                result.map(item => <Link key={item.idMeal} to={'/meal/' + item.idMeal}><h1>{item.strMeal}</h1></Link>)
             }
         </div>
     </div>

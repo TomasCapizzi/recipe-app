@@ -16,7 +16,7 @@ export default function Meal({url}){
     const ingredientsList = [];
     const measurements = [];
 
-    const {addFav, removeFav, isFav} = useContext(FavContext);
+    const {addFav, removeFav, isFav, getFavs} = useContext(FavContext);
 
     async function getMeal(id){
         const respuesta = await fetch(url + '/lookup.php?i=' + id);
@@ -50,9 +50,10 @@ export default function Meal({url}){
     }
 
       useEffect(()=>{
-          getMeal(id); 
-           // eslint-disable-next-line react-hooks/exhaustive-deps     
-      },[]);
+        getFavs()
+        getMeal(id);
+        // eslint-disable-next-line react-hooks/exhaustive-deps     
+      },[id]);
 
     return (
         <div className='meal-container'>

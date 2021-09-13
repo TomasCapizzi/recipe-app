@@ -93,3 +93,24 @@
         }    
     }
 }
+
+@media only screen and (min-width: 1024px) and (max-width: 1400px) {
+
+    .preview-meal{
+        width: 75%;
+        justify-content: center;
+    
+        img{
+            margin-bottom: 50px;
+        }
+        h3{
+            font-size: 2rem;
+            padding: 6px 10px;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+            max-width: 325px;
+            text-align: left;
+        }    
+    }
+}
+
