@@ -23,12 +23,16 @@ export function FavContextProvider({children}){
         
     }
     const isFav =(meal, id)=>{
-        let coincidence = favMeals.filter(item => item.idMeal === meal.idMeal);
-        let coincidence2 = favMeals.filter(item => item.idMeal === id);
-        if(coincidence.length || coincidence2.length){
-            return true;
-        } else{
-            return false;
+        let coincidence = undefined;
+        let coincidence2 = undefined;
+        if(favMeals){
+            coincidence = favMeals.filter(item => item.idMeal === meal.idMeal);
+            coincidence2 = favMeals.filter(item => item.idMeal === id);
+            if(coincidence.length || coincidence2.length){
+                return true;
+            } else{
+                return false;
+            }
         }
     }
 
