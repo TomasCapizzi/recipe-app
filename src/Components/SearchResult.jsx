@@ -1,6 +1,6 @@
-import React from 'react';
 import {BiRightArrow} from "react-icons/bi";
 import {Link} from 'react-router-dom';
+import React from 'react';
 
 export default function SearchResult({result, setHandlerSearch}){
 
@@ -8,12 +8,13 @@ export default function SearchResult({result, setHandlerSearch}){
         setHandlerSearch(false);
     }
 
-    return <div className='search-result'>
+    return (
+    <div className='search-result'>
         <button onClick={cancelSearch}><BiRightArrow/></button>
         <div>
             {
                 result.map(item => <Link key={item.idMeal} to={'/meal/' + item.idMeal}><h1>{item.strMeal}</h1></Link>)
             }
         </div>
-    </div>
+    </div>)
 }
