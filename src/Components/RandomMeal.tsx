@@ -1,8 +1,14 @@
+import { Meal } from '../Interfaces/Meal';
 import Preview from './Preview';
 import RandomHeader from './RandomHeader';
 import React from 'react';
 
-export default function RandomMeal({random, randomMeal}){
+interface Props {
+    random: Meal[]
+    randomMeal: () => void
+}
+
+export default function RandomMeal({random, randomMeal}: Props){
 
     return (
         <div className='random-container'>

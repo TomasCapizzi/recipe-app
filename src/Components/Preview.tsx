@@ -1,7 +1,12 @@
-import React from 'react';
 import {Link} from 'react-router-dom'
+import { Meal } from '../Interfaces/Meal';
+import React from 'react';
 
-export default function Preview({meal}){
+interface Props {
+    meal: Meal[]
+}
+
+export default function Preview({meal}: Props){
     
 
     return <div className='preview-meal'>

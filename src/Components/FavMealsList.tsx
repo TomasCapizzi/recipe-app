@@ -1,10 +1,12 @@
 import React, {useContext, useEffect} from 'react';
+
 import { FavContext } from '../Context/FavContext';
 import { Link } from 'react-router-dom';
+import { MealContext } from '../Interfaces/Meal';
 
 export default function FavMealsList(){
 
-    const {favMeals, getFavs} = useContext(FavContext);
+    const {favMeals, getFavs} = useContext(FavContext) as MealContext;
 
     useEffect(()=>{
         getFavs();

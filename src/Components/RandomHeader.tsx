@@ -1,7 +1,11 @@
 import {AiOutlineReload} from 'react-icons/ai';
 import React from 'react';
 
-function RandomHeader({randomMeal}) {
+interface Props {
+  randomMeal: () => void
+}
+
+function RandomHeader({randomMeal}: Props) {
   return (
     <div className='app-header'>
         <h2>Ideas to inspire you</h2>
