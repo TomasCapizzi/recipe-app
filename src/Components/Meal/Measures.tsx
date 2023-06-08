@@ -1,6 +1,10 @@
 import React from 'react'
 
-function Measures({measures}) {
+interface Props {
+  measures: string[]
+}
+
+function Measures({measures}: Props) {
   return (
     <div>
         <h3>Measures</h3>

@@ -2,7 +2,12 @@ import {AiFillHeart, AiOutlineHeart} from 'react-icons/ai'
 
 import React from 'react';
 
-function FavButton({favouriteMeal, fav}) {
+interface Props {
+  favouriteMeal: () => void
+  fav: boolean
+}
+
+function FavButton({favouriteMeal, fav}: Props) {
   return (
     <button id='fav-meal' onClick={favouriteMeal} >{
         fav ? <AiFillHeart/> : <AiOutlineHeart/>

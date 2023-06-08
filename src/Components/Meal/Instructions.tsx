@@ -1,6 +1,11 @@
+import { Meal } from '../../Interfaces/Meal'
 import React from 'react'
 
-function Instructions({meal}) {
+interface Props {
+  meal: Meal
+}
+
+function Instructions({meal}: Props) {
   return (
     <div className='instructions'>
         <p>{meal.strInstructions}</p>

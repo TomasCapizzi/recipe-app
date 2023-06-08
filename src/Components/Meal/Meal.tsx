@@ -3,6 +3,7 @@ import React,{useContext, useEffect, useState} from 'react';
 import FavButton from './FavButton';
 import { FavContext } from '../../Context/FavContext';
 import Instructions from './Instructions';
+import { MealContext } from '../../Interfaces/Meal';
 import MealIngredientesContainer from './MealIngredientesContainer';
 import Spinner from '../Spinner/Spinner';
 import useGetMeal from '../../Hooks/useGetMeal';
@@ -13,12 +14,13 @@ export default function Meal(){
     const {id} = useParams();
     const [fav, setFav] = useState(false);
 
-    const {addFav, removeFav, isFav, getFavs} = useContext(FavContext);
+    const {addFav, removeFav, isFav, getFavs} = useContext(FavContext) as MealContext;
 
     const {getMeal, meal, handle, ingredients, measures} = useGetMeal({ setFav, isFav })  
 
     function favouriteMeal(){
       //  setFav(isFav(meal))
+      if(meal){
         if(fav){
             setFav(false);
             removeFav(meal.idMeal)
@@ -26,11 +28,13 @@ export default function Meal(){
             setFav(true);
             addFav(meal);
         }
+      }
+
     }
 
       useEffect(()=>{
         getFavs()
-        getMeal(id);
+        getMeal(Number(id));
         // eslint-disable-next-line react-hooks/exhaustive-deps     
       },[id]);
 

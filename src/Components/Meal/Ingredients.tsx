@@ -1,6 +1,10 @@
 import React from 'react'
 
-function Ingredients({ingredients}) {
+interface Props {
+  ingredients: string[]
+}
+
+function Ingredients({ingredients}: Props) {
   return (
     <div>
         <h3>Ingredient</h3>

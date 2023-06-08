@@ -1,10 +1,12 @@
-import React,{useState, useEffect} from 'react';
+import React,{useEffect, useState} from 'react';
+
+import { Category } from '../Interfaces/Meal';
 import { Link } from 'react-router-dom';
 
 export default function MenuCategories(){
-    const url = 'https://www.themealdb.com/api/json/v1/1';
+    const url: string = 'https://www.themealdb.com/api/json/v1/1';
 
-    const [categories, setCategories] = useState();
+    const [categories, setCategories] = useState<Category[]>();
 
     async function getCategories(){
         const respuesta = await fetch(url + '/categories.php');
