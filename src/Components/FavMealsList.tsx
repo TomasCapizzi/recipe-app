@@ -11,7 +11,7 @@ export default function FavMealsList(){
     useEffect(()=>{
         getFavs();
          // eslint-disable-next-line react-hooks/exhaustive-deps
-    },[])
+    },[favMeals])
 
 
     return (
