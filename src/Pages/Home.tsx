@@ -15,6 +15,7 @@ function Home() {
   
     useEffect(()=>{
       randomMeal();
+      // eslint-disable-next-line
     },[]) 
 
   return (

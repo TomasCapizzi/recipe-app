@@ -10,8 +10,7 @@ const useRandomMeal = ({setRandom}: Props) => {
       
     async function randomMeal(){
         const respuesta = await fetch(url + '/random.php');
-        const res = await respuesta.json();  
-        console.log(res.meals);          
+        const res = await respuesta.json();          
         setRandom(res.meals)
     }
   return {

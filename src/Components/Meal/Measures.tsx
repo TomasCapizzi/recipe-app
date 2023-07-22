@@ -5,6 +5,7 @@ interface Props {
 }
 
 function Measures({measures}: Props) {
+  console.log(measures)
   return (
     <div>
         <h3>Measures</h3>
